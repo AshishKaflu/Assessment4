@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: c23366557c164440aa21e3280a8ac9a1, type: 3}
     - target: {fileID: 1146021409510785114, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1146021409510785114, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
       propertyPath: m_Controller
@@ -449,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: acdb5c9f235f049ddb73da4d5cc2b09b, type: 3}
     - target: {fileID: 1146021409510785114, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1146021409510785114, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
       propertyPath: m_Controller
@@ -2089,7 +2089,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 42aa6ce32b26a49a3883b1947b93a44f, type: 3}
     - target: {fileID: 1146021409510785114, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1146021409510785114, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
       propertyPath: m_Controller
@@ -3659,6 +3659,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1146021409510785112, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1146021409510785114, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1146021409510785115, guid: 8cbda6292b1564b5f96ee9b64e6a5a2e, type: 3}
@@ -9073,7 +9077,6 @@ GameObject:
   - component: {fileID: 1883403491}
   - component: {fileID: 1883403490}
   - component: {fileID: 1883403489}
-  - component: {fileID: 1883403492}
   - component: {fileID: 1883403493}
   m_Layer: 6
   m_Name: Pacman
@@ -9166,25 +9169,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1883403492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883403488}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85c1e0d64fe684faa9e48e2813f11392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1128877071}
-  - {fileID: 1146861653}
-  - {fileID: 1674063107}
-  - {fileID: 454583793}
-  speed: 1
-  animatorController: {fileID: 1883403489}
 --- !u!82 &1883403493
 AudioSource:
   m_ObjectHideFlags: 0
