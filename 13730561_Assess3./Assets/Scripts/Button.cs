@@ -16,6 +16,7 @@ public class Button : MonoBehaviour
         
     }
 
+    [System.Obsolete]
     public void OpenGameScene(string scene)
     {
         Application.LoadLevel(scene);

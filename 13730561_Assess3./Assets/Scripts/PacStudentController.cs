@@ -13,6 +13,6 @@ public class PacStudentController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime,Input.GetAxis("Vertical") * Time.deltaTime,0);
     }
 }
