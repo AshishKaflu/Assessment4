@@ -29,6 +29,7 @@ public class DelayedStart : MonoBehaviour
             yield return 0;
         countDown.gameObject.SetActive(false);
         Time.timeScale = 1;
+        GameTimer.instance.BeginTimer();
 
     }
 
