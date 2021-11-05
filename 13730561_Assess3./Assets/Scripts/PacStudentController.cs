@@ -52,7 +52,14 @@ public class PacStudentController : MonoBehaviour
         Dust.Play();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+       
+        if (other.gameObject.CompareTag("Pellets"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 
-    
 
 }
