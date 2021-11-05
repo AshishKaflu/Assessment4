@@ -6,6 +6,7 @@ public class PacStudentController : MonoBehaviour
 {
     public float Speed = 04f;
     public Animator animatorController;
+    public ParticleSystem Dust;
 
     // Start is called before the first frame update
     void Start()
@@ -17,33 +18,38 @@ public class PacStudentController : MonoBehaviour
     void Update()
     {
 
-
-        //float horizontalmovement = Input.GetAxisRaw("Horizontal") * Time.deltaTime * Speed;
-        //float verticalmovement = Input.GetAxisRaw("Vertical") * Time.deltaTime * Speed;
-
         if (Input.GetKeyDown(KeyCode.S))
         {
             animatorController.SetTrigger("DownParam");
+            CreateDust();
         }
 
         if(Input.GetKeyDown(KeyCode.W)) {
             animatorController.SetTrigger("UpParam");
+            CreateDust();
         }
 
         if(Input.GetKeyDown(KeyCode.A))
         {
             animatorController.SetTrigger("LeftParam");
+            CreateDust();
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
             animatorController.SetTrigger("RightParam");
+            CreateDust();
         }
 
         float horizontalmovement = Input.GetAxisRaw("Horizontal") * Time.deltaTime * Speed;
         float verticalmovement = Input.GetAxisRaw("Vertical") * Time.deltaTime * Speed;
         transform.Translate(horizontalmovement, verticalmovement, 0);
 
+    }
+
+    void CreateDust()
+    {
+        Dust.Play();
     }
 
 
