@@ -5,7 +5,10 @@ using UnityEngine;
 public class PacStudentController : MonoBehaviour
 {
 
-    public float Speed = 10f;
+    public float Speed = 04f;
+    private KeyCode currentInput;
+    private KeyCode lastInput;
+
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +19,9 @@ public class PacStudentController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Input.GetAxis("Horizontal") * Time.deltaTime * Speed , Input.GetAxis("Vertical") * Time.deltaTime * Speed ,0);
+
+       float horizontalmovement = Input.GetAxis("Horizontal") * Time.deltaTime * Speed;
+       float verticalmovement = Input.GetAxis("Vertical") * Time.deltaTime * Speed;
+       transform.Translate(horizontalmovement, verticalmovement,0);
     }
 }
