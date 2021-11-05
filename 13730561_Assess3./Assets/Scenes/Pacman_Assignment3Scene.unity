@@ -10463,6 +10463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4
+  animatorController: {fileID: 1883403489}
 --- !u!82 &1883403493
 AudioSource:
   m_ObjectHideFlags: 0
